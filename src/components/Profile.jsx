@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 const Profile = () => {
   const { user, isAuthenticated } = useAuth0();
   useEffect(() => {
-    toast("Chào mừng bạn đã qua trở lại");
+    isAuthenticated && toast("Chào mừng bạn đã quay trở lại !");
   }, []);
   return (
     isAuthenticated && (
